@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Banking Form</title>
+		<meta charset="utf-8">
+		<style type="text/css"></style>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	</head>
+	<body>
+		<div>
+			<header>
+				<h1>Loan Application</h1>
+			</header>
+				<div id="wrapper">
+					<form action="send-email.php" method="post">
+						<fieldset class="frame">
+							Applicant First Name
+							<input type="text" name="fName" size="30" maxlength="40"><br>
+							Applicant Middel Initial
+							<input type="text" name="fName" size="3" maxlength="1"><br>
+							Applicant Last Name
+							<input type="text" name="lName" size="30" maxlength="40"><br>
+							Applicant Address
+							<textarea name="address" rows="3" cols="30"></textarea><br>
+						</fieldset>
+						<fieldset class="frame">
+							Occupation
+							<input type="text" name="fName" size="30" maxlength="40"><br>
+							Employer Name
+							<input type="text" name="lName" size="30" maxlength="40"><br>
+							Employer Address
+							<textarea name="address" rows="3" cols="30"></textarea><br>
+						</fieldset>
+						<fieldset class="frame">
+							Select Type of Loan
+							<select name="loan-type">
+								  <option value="commercial selected="selected"">Commercial</option>
+								  <option value="real-estate">Real Estate</option>
+								  <option value="personal">Personal</option>
+								  <option value="mortgage">Mortgage</option>
+							</select><br>
+							Loan Request Amount
+							<input type="text" name="loan" size="30" maxlength="40"><br>
+							Term of Loan
+							<label><input type="radio" name="select1" value="year5"> 5 year</label>
+							<label><input type="radio" name="select1" value="year15"> 15 year</label>
+							<label><input type="radio" name="select1" value="year30" checked="checked"> 30 year</label><br>
+						</fieldset>
+						<fieldset class="frame">
+							Additional Comments<br>
+							<textarea name="comments" rows="5" cols="30"></textarea><br>
+						</fieldset>
+						<fieldset class="frame">
+							Applicant Email
+							<input type="text" name="email" size="30" maxlength="40"><br>
+							Applicant Phone
+							<input type="text" name="phone" size="30" maxlength="12"><br>
+							Applicant LinkedIn URL
+							<input type="text" name="url" size="30" maxlength="40"><br>
+						</fieldset>
+						<fieldset class="frame">
+							Special Conditions<br>
+							<label><input type="checkbox" name="spec-cond" value="down-pmt">     I have a down payment</label><br>
+							<label><input type="checkbox" name="spec-cond" value="out-of-state">     Out of state resident</label><br>
+							<label><input type="checkbox" name="spec-cond" value="married">     Married</label><br>
+							<label><input type="checkbox" name="spec-cond" value="co-signed">     Loan will be co-signed</label><br>
+						</fieldset>
+					</form>	
+				</div>
+		</div>
+	</body>
+</html>
