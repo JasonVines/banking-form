@@ -1,0 +1,90 @@
+/******************************
+GENERAL
+******************************/
+
+body {
+	background-color: grey;
+	font-family: Tahoma, Verdana, sans-serif;
+}
+
+
+/* *****************************
+BODY
+***************************** */
+
+header {
+	text-align: center;
+}
+
+#wrapper {
+	max-width: 100%;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+form {
+	justify-content: space-between;
+}
+
+fieldset {
+	display: flex;
+	flex-grow: 1;
+	padding: 10px;
+	width: 80%;	
+}
+
+
+/******************************
+FOOTER
+******************************/
+
+
+
+
+/******************************
+MEDIA QUERIES
+******************************/
+
+@media only screen and (max-width:374px) {
+	#wrapper {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	fieldset {
+		width: 92%;
+	}
+}
+
+@media only screen and (min-width:374px) {
+	#wrapper {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	fieldset {
+		width: 93%;
+	}
+}
+
+@media only screen and (min-width:424px) {
+	#wrapper {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	fieldset {
+		width: 94%;
+	}
+}
+
+@media only screen and (min-width:767px) {
+	#wrapper {
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	fieldset {
+		width: 95%;
+	}
+}
