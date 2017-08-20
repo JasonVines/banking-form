@@ -3,14 +3,14 @@ GENERAL
 ******************************/
 
 body {
-	background-color: grey;
+	background-color: #4b63ff;
 	font-family: Tahoma, Verdana, sans-serif;
 }
 
 
-/* *****************************
+/******************************
 BODY
-***************************** */
+******************************/
 
 header {
 	text-align: center;
@@ -20,25 +20,16 @@ header {
 	max-width: 100%;
 	margin-right: 10%;
 	margin-left: 10%;
-}
+	background-color: #ff9f4b;
 
-form {
-	justify-content: space-between;
 }
 
 fieldset {
 	display: flex;
 	flex-grow: 1;
 	padding: 10px;
-	width: 80%;	
+	width: 80%;
 }
-
-
-/******************************
-FOOTER
-******************************/
-
-
 
 
 /******************************
@@ -64,6 +55,7 @@ MEDIA QUERIES
 
 	fieldset {
 		width: 93%;
+		margin: 0;
 	}
 }
 
@@ -85,6 +77,24 @@ MEDIA QUERIES
 	}
 
 	fieldset {
-		width: 95%;
+		width: 96%;
+	}
+}
+
+@media only screen and (min-width:1024px) {
+	fieldset {
+		width: 97%;
+	}
+}
+
+@media only screen and (min-width:1440px) {
+	fieldset {
+		width: 97.8%;
+	}
+}
+
+@media only screen and (min-width:1780px) {
+	fieldset {
+		width: 98.3%;
 	}
 }
